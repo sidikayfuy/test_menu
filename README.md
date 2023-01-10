@@ -1,4 +1,4 @@
-#Тестовое задание Django Template tag menu
+# Тестовое задание Django Template tag menu
 
 Данные для админки:
 
