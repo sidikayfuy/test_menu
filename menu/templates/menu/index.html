@@ -1,0 +1,19 @@
+{% load menutags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Menu</title>
+</head>
+<body>
+    <div>
+        <h1><a href="{% url 'index'%}">Главная</a></h1>
+    </div>
+    {% block content %}
+        {% for menu in menus %}
+            <h2>{{ menu.name }}</h2>
+            {% draw_menu menu '' %}
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

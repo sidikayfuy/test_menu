@@ -1,0 +1,8 @@
+{% extends 'menu/index.html' %}
+
+{% load menutags %}
+
+{% block content %}
+    <h2>{{ need_menu.name }}</h2>
+    {% draw_menu need_menu submenu %}
+{% endblock %}
